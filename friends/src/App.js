@@ -11,10 +11,10 @@ function App() {
     <Router>
       <div className="App">
       <ul className='ul-App'>
-        <li className='li-App'>
-          <Link to='/login'>Login</Link>
+        <li>
+          <Link className='li-login' to='/login'>Login</Link>
         </li>
-        <li className='li-App'>
+        <li className='li-friends'>
           <Link to='/friends'>Friends</Link>
         </li>
       </ul>
