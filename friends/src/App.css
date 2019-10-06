@@ -10,3 +10,9 @@
   color: rgb(0,87,154);
 }
 
+.li-App {
+list-style: none;
+text-decoration: none;
+} 
+
+
