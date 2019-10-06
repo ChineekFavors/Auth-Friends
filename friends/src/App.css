@@ -14,3 +14,19 @@
   list-style: none;
 } 
 
+.friendsDiv{
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 80%;
+}
+
+.friend-div{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+ 
+}
+
+.friend-div h4{
+  margin-right: 10%;
+}
