@@ -2,10 +2,11 @@ import React, {useState, useEffect} from 'react';
 
 import {axiosWithAuth} from '../utils/axiosWithAuth.js';
 
+import AddFriend from './AddFriend.js'
+
  export const Friends = () => {
  	const [friends, setFriends] = useState([]);
- 
-
+ 	
  	const fetchData = () => {
  		axiosWithAuth()
  		.get('/friends')
@@ -16,7 +17,7 @@ import {axiosWithAuth} from '../utils/axiosWithAuth.js';
 
  	useEffect(() => {
  		fetchData();
-    // Update the document title using the browser API
+    
     
   },[]);
  		
@@ -30,6 +31,8 @@ import {axiosWithAuth} from '../utils/axiosWithAuth.js';
 					<h4>Email: {friend.email}</h4>
 				</div>
 			)}
+			<AddFriend friends={friends} fetchData={fetchData}/>
 		</div>
+
 	);
 }
